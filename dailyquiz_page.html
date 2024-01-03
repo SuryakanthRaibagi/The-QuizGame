@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizGame</title>
+    <link rel="icon" href="image/MyLicence.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h3>📝🖋QuizGame</h3>
+        <nav class="navegate">
+            <a href="index.html">Home</a>
+            <a href="student_page.html">Rules</a>
+            <a href="dailyquiz_page.html">DailyQuiz</a>
+            <a href="score_page.html">Score's</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="dailyquiz_container">
+            <h3> Select Your Prefered Language</h3>
+            <div class="lang_group">
+                <label>C</label>
+                <input type="button" id="C" class="btn" value="Start Test"></form>
+            </div>
+            <div class="lang_group">
+                <label>C++</label>
+                <input type="button" id="C++" class="btn" value="Start Test">
+            </div>
+            <div class="lang_group">
+                <label>JavaScript</label>
+                <input type="button" id="js" class="btn" value="Start Test">
+            </div>
+            <div class="lang_group">
+                <label>Python</label>
+                <input type="button" id="py" class="btn" value="Start Test">
+            </div>
+            <div class="lang_group">
+                <label>SQl</label>
+                <input type="button" id="sql" class="btn" value="Start Test">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <footer>
+            <p>&copy; 2023 QuizGame. All rights reserved.</p>
+        </footer>
+    </footer>
+    <script src="scrip.js"></script>
+    <script>
+        document.querySelector('.dailyquiz_container').addEventListener('click', function (e) {
+            // window.location.href = "quizgame.html?key=c";
+            let ky=e.target.id
+            switch (ky) {
+                case "C":
+                window.location.href = "quizgame.html?key=C";
+                    break;
+                case "C++":
+                window.location.href = "quizgame.html?key=Cpp";
+                    break;
+                case "js":
+                window.location.href = "quizgame.html?key=js";
+                    break;
+                case "py":
+                window.location.href = "quizgame.html?key=py";
+                    break;
+                case "sql":
+                window.location.href = "quizgame.html?key=sql";
+                    break;
+            
+                default:
+                    break;
+            }
+        })
+    </script>
+</body>
+
+</html>

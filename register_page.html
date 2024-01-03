@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizGame</title>
+    <link rel="icon" href="image/MyLicence.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>📝🖋QuizGame</h3>
+        <nav class="navegate">
+            <a href="index.html">Home</a>
+            <a href="student_login.html">Student Login</a>
+            <a href="admin_login.html">Admin Login</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+      </header> 
+      <div class="reg_container">
+        <h2>Register</h2>
+        <form action="" onsubmit="return validateForm()" method="post">
+          <div class="from-group">
+            <span><label>Name:</label></span>
+            <span><input type="text" class="form-control" required></span>
+        </div>
+        <div class="from-group">
+            <label>Email:</label>
+            <input type="email" class="form-control" required>
+        </div>
+        <div class="from-group">
+            <label>Password:</label>
+            <input type="password" class="form-control" id="password" name="password"  required>
+        </div>
+        <div class="from-group">
+            <label>Confirm Password:</label>
+            <input type="password" class="form-control"  id="confirm_password" name="confirm_password" required>
+        </div>
+        <div class="from-group">
+            <label>Phone Number:</label>
+            <input type="text" class="form-control" required>
+        </div>
+        <div class="from-box">
+            <label class="mainLable">Gender:</label>
+            <div>
+                <label>Male:</label>
+                <input type="radio" name="rad" value="male">
+                <label>Female:</label>
+                <input type="radio" name="rad" value="female">
+                <label>Others:</label>
+                <input type="radio" name="rad" value="others">
+            </div>
+        </div>
+        <div class="from-group">
+          <label>DOB:</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="from-box">
+            <label class="mainLable">Language:</label>
+            <div>
+                <label>English:</label>
+                <input type="checkbox" name="rad" value="english">
+                <label>Hindi:</label>
+                <input type="checkbox" name="rad" value="hindi">
+                <label>Kannada:</label>
+                <input type="checkbox" name="rad" value="kannada">
+            </div>
+        </div>
+
+        <div class="from-group"><input type="submit" class="btn" value="Register">
+        </div>
+
+        </form>
+
+      </div>
+
+    <footer>
+        <footer>
+            <p>&copy; 2023 QuizGame. All rights reserved.</p>
+          </footer>
+    </footer>
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("confirm_password").value;
+
+            if (password !== confirm_password) {
+                alert("Passwords do not match. Please try again.");
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        }
+    </script>
+
+</body>
+</html>

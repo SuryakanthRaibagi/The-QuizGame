@@ -1,0 +1,406 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color:lightgray; 
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+  }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.navegate a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navegate a:hover{
+  font-weight: bold;
+}
+.bgimage{
+  background-image: url("image/Home.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: 100% 100%;
+  color:white;
+  font-weight: bold;
+  width: 100%;
+  height: 80vh;
+}
+.bgimage p,h1{
+  /* font-size: 20px; */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  /* line-height: 2; */
+  margin-top: 5%;
+
+}
+
+/* .login_container{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+} */
+
+.login_container{
+  width: 400px;
+  margin: auto;
+  max-width: 90%;
+  height: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.3);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top:150px;
+  margin-bottom: 150px;
+}
+
+
+/* .login_container form h2{
+  text-align: center;
+} */
+
+.login_container form .form-control{
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid silver;
+  margin: 10px 0 18px 0;
+  padding: 0 10px;
+}
+
+.login_container form .login_btn{
+  margin-left: 50%;
+  transform: translatex(-50%);
+  width: 100px;
+  height: 30px;
+  border: none;
+  background: green;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.login_container form .login_btn:hover{
+  opacity: 0.7;
+  font-size: large;
+  /* background-color: red; */
+}
+
+.login_container .CNA a{
+  font-size: 12px;
+  /* margin-left: 35%; */
+  margin-top: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  
+footer p {
+    font-size: 14px;
+}
+
+.reg_container{
+  width: fit-content;
+  height: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.3);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top:40px;
+  margin-bottom: 40px;
+}
+
+.reg_container form .form-control{
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid silver;
+  margin: 10px 0 18px 0;
+  padding: 0 10px;
+}
+
+.reg_container h2{
+  text-align: center;
+}
+.reg_container form .from-box{
+  margin-bottom: 20px;
+}
+
+.reg_container .btn{
+  color: white;
+  /* margin-top: 20px; */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  transition: .3s;
+}
+
+.reg_container .btn:hover{
+  opacity: 0.7;
+  font-size: large;
+  /* background-color: red; */
+}
+.reg_container .mainLable{
+  /* padding: 0 10px; */
+  line-height:2;
+  
+}
+
+.section1 .rules ul{
+  width: fit-content;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  
+}
+.section1 ul>li{
+  list-style: circle;
+  line-height: 2;
+  font-size: 20px;
+
+}
+.section1 h1{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+/* DailyQuiz */
+
+.dailyquiz_container{
+  width: 400px;
+  margin: auto;
+  max-width: 90%;
+  height: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.3);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top:150px;
+  margin-bottom: 150px;
+}
+
+.dailyquiz_container label{
+  width: 100px;
+  display: inline-table;
+}
+
+.dailyquiz_container .lang_group{
+  width: 100%;
+  height: 30px;
+  margin: 30px 0 18px 0;
+  padding: 0 20px;
+}
+
+.dailyquiz_container .lang_group .btn{
+  color: white;
+  width: 25%;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  transition: .3s;
+  margin-left: 40%;
+}
+.dailyquiz_container .lang_group .btn:hover{
+  opacity: 0.7;
+  background-color:red;
+}
+
+@media(max-width:400px){
+  .dailyquiz_container .lang_group .btn{
+    width: 25%;
+    height: 25px;
+    margin-left: 20%;
+    font-size:10px;
+  }
+ 
+}
+/* Score page */
+table_container h1{
+  margin-left: 50%;
+  
+}
+.styled-table {
+  width: 100%;
+  margin-top: 3%
+}
+.styled-table thead tr {
+  background-color: rgb(107, 102, 236);
+  color:white;
+}
+.styled-table th{
+  padding: 9px 9px;
+}
+/*
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+} */
+
+/* AdminAdd */
+.admin_add_container{
+  width: 400px;
+  margin: auto;
+  max-width: 90%;
+  height: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.3);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top:150px;
+  margin-bottom: 150px;
+}
+
+.admin_add_container label{
+  width: 100px;
+  display: inline-table;
+}
+
+.admin_add_container .admin_add_group{
+  width: 100%;
+  height: 30px;
+  margin: 30px 0 18px 0;
+  padding: 0 20px;
+}
+
+.admin_add_container .admin_add_group .btn{
+  color: white;
+  width: 25%;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  transition: .3s;
+  margin-left: 40%;
+}
+.admin_add_container .admin_add_group .btn:hover{
+  opacity: 0.7;
+  background-color:red;
+}
+@media(max-width:400px){
+  .admin_add_container .admin_add_group .btn{
+    width: 25%;
+    height: 25px;
+    margin-left: 22%;
+    font-size:10px;
+  }
+}
+
+/* game_page */
+.container_game{
+  width: 400px;
+  margin: auto;
+  max-width: 90%;
+  height: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.3);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 120px;
+  margin-bottom:60px;
+}
+@media(max-width:400px){
+  .container_game{
+    width: 300px;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+#question{
+  width: 100%;
+  font-size:20px;
+
+}
+
+.choice_container{
+  display: flex;
+  /* margin: bottom 0.5rem; */
+  width: 100%;
+  font-size: 15px;
+  border:0.1rem solid rgba(86, 165, 235, 0.25);
+  background-color: white;
+}
+@media(max-width:400px){
+  .choice_container.choice_prefix{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.choice_container:hover{
+  cursor: pointer;
+  box-shadow: 0 6px 0 rgb(86, 165, 235,0.25);
+  transform: translateY(-0.8px);
+}
+.choice_prefix{
+  padding: 1.5rem 2.5rem;
+  background-color: rgb(84, 84, 91);
+  border-style: ridge;
+  color: white;
+}
+.choice_text{
+  padding: 1.5rem;
+  width: 100%;
+}
+#score-container {
+text-align: right;
+margin-top: 20px;
+}
+
+#score {
+font-size: 1.2em;
+font-weight: bold;
+color: #4CAF50; /* Green color, you can change it to your preferred color */
+}
